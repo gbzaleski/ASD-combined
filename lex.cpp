@@ -29,7 +29,6 @@ int binsearch(int a, int b, int low, int high)
         return low;
     else if (W[a + low + 1] != W[b + low + 1])
         return low + 1;
-    else cout << "WTF lol\n";
 }
 
 int main()
