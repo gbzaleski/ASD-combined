@@ -4,7 +4,7 @@ using namespace std;
 
 #define MP make_pair
 
-int time_kurwa = 1;
+int timekr = 1;
 class Tree
 {
     public:
@@ -41,7 +41,7 @@ class Tree
             return;
         else if (l <= vl && vr <= r)
         {
-            this->d[v] = MP(kolor, time_kurwa);
+            this->d[v] = MP(kolor, timekr);
             this->sum[v] = (vr - vl + 1) * kolor;
         }
         else
@@ -90,7 +90,7 @@ int main()
 
     while (t--)
     {
-        time_kurwa++;
+        timekr++;
         cin >> a >> b >> c;
 
        myTree.maluj(a, b, c == 'B');
